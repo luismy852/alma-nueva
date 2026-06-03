@@ -1,0 +1,11 @@
+# Imágenes originales / de referencia en la raíz
+# (las que usa el sitio viven en assets/)
+/*.png
+
+# Archivos temporales de capturas/verificación
+/_*.png
+/_*.ps1
+
+# Sistema
+Thumbs.db
+.DS_Store

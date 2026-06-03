@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alma nueva — un documental animado</title>
+  <meta name="description" content="alma nueva, un documental animado. Un viaje por la esencia, la mente, el corazón, el aliento, el vientre y el cuerpo." />
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ====================== NAVBAR ====================== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="#hero" class="brand">Alma nueva</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#esencia">Tráiler</a>
+        <a href="#mente">El proyecto</a>
+        <a href="#historias">Historias</a>
+        <a href="#app">La App</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====================== HÉROE ====================== -->
+  <section class="hero" id="hero">
+    <div class="hero__texture" aria-hidden="true"></div>
+    <div class="hero__content reveal">
+      <p class="hero__eyebrow">Un documental animado</p>
+      <h1 class="hero__title">Alma<br />nueva</h1>
+      <p class="hero__lead">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <a href="#esencia" class="btn-trailer">Ver tráiler &rarr;</a>
+    </div>
+    <div class="hero__smoke" aria-hidden="true"></div>
+  </section>
+
+  <!-- ====================== BANDAS ====================== -->
+  <main class="bands">
+    <span class="bands__thread" aria-hidden="true"></span>
+
+    <!-- 01 TRÁILER -->
+    <section class="band band--esencia band--trailer reveal" id="esencia">
+      <div class="band__inner">
+        <div class="band__text">
+          <span class="band__num">01</span>
+          <h2 class="band__title">Tráiler</h2>
+          <p class="band__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+
+        <!-- Reproductor de video simulado -->
+        <div class="trailer-player" id="trailerPlayer" role="button" tabindex="0"
+             aria-label="Reproducir tráiler de alma nueva">
+          <button class="trailer-player__play" aria-hidden="true" tabindex="-1">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          </button>
+          <span class="trailer-player__label">Alma nueva — tráiler oficial</span>
+          <div class="trailer-player__bar"><span></span></div>
+          <span class="trailer-player__time">0:00 / 2:14</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 SOBRE EL PROYECTO -->
+    <section class="band band--mente band--right reveal" id="mente">
+      <div class="band__text">
+        <span class="band__num">02</span>
+        <h2 class="band__title">El proyecto</h2>
+        <p class="proyecto-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="band__desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </section>
+
+    <!-- 03 HISTORIAS -->
+    <section class="band band--corazon band--historias reveal" id="historias">
+      <div class="band__inner">
+        <div class="band__head">
+          <span class="band__num">03</span>
+          <h2 class="band__title">Historias</h2>
+          <p class="band__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+
+        <div class="stories__grid">
+          <article class="story-card">
+            <img class="story-card__img" src="assets/tarjeta-historias.png" alt="Retrato ilustrado de Jairo" />
+            <blockquote class="story-card__quote">“Pagué mi condena, pero lo más difícil fue volver a creer que merecía otra oportunidad.”</blockquote>
+            <div class="story-card__who">
+              <span class="story-card__name">Jairo</span>
+              <span class="story-card__meta">47 años</span>
+            </div>
+          </article>
+
+          <article class="story-card">
+            <img class="story-card__img" src="assets/tarjeta-historias.png" alt="Retrato ilustrado de El Mono" />
+            <blockquote class="story-card__quote">“Cuando se cierra una reja, algo dentro de ti también aprende a abrirse.”</blockquote>
+            <div class="story-card__who">
+              <span class="story-card__name">El Mono</span>
+              <span class="story-card__meta">34 años</span>
+            </div>
+          </article>
+
+          <article class="story-card">
+            <img class="story-card__img" src="assets/tarjeta-historias.png" alt="Retrato ilustrado de Andrés" />
+            <blockquote class="story-card__quote">“No me arrepiento de lo que fui, sino de cuánto tardé en cambiar.”</blockquote>
+            <div class="story-card__who">
+              <span class="story-card__name">Andrés</span>
+              <span class="story-card__meta">29 años</span>
+            </div>
+          </article>
+
+          <article class="story-card">
+            <img class="story-card__img" src="assets/tarjeta-historias.png" alt="Retrato ilustrado de El Profe" />
+            <blockquote class="story-card__quote">“Aquí dentro descubrí que todavía me quedaba un alma por estrenar.”</blockquote>
+            <div class="story-card__who">
+              <span class="story-card__name">El Profe</span>
+              <span class="story-card__meta">41 años</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 LA APP -->
+    <section class="band band--aliento band--app reveal" id="app">
+      <div class="band__inner">
+
+        <!-- Mockup real de la app -->
+        <img class="app-shot" src="assets/app.png"
+             alt="App alma nueva: pantalla de inicio de sesión de la bolsa de empleo" />
+
+        <!-- Texto -->
+        <div class="band__text app-copy">
+          <span class="band__num">04</span>
+          <h2 class="band__title">La App</h2>
+          <p class="app-copy__lead">Una bolsa de empleo para volver a empezar.</p>
+          <p class="band__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+          </p>
+          <ul class="app-features">
+            <li>Ofertas de empleo inclusivas y verificadas</li>
+            <li>Perfil y hoja de vida digital</li>
+            <li>Acompañamiento durante la reinserción</li>
+          </ul>
+          <a href="#contacto" class="btn-app">Conoce la app &rarr;</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 05 EQUIPO -->
+    <section class="band band--vientre band--equipo reveal" id="equipo">
+      <div class="band__inner">
+        <div class="band__head">
+          <span class="band__num">05</span>
+          <h2 class="band__title">Equipo</h2>
+          <p class="band__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+
+        <div class="team__grid">
+          <!-- Corazón → Dirección -->
+          <article class="team-card">
+            <div class="team-card__art">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M32 54C16 42 8 32 8 21a12 12 0 0 1 24-4 12 12 0 0 1 24 4c0 11-8 21-24 33z" />
+                <path d="M32 19c-2 3-5 4-8 3" />
+              </svg>
+            </div>
+            <h3 class="team-card__name">Mateo Rivas</h3>
+            <p class="team-card__role">Dirección</p>
+          </article>
+
+          <!-- Cerebro → Guion -->
+          <article class="team-card">
+            <div class="team-card__art">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M32 13c-2-1-5-1-7 1-3 0-6 2-6 6 0 1 0 1 0 2-3 1-5 4-5 6 0 3 2 5 4 6 0 1 0 1 0 2 0 3 3 6 6 6 2 0 4-1 5-2 1 1 3 2 5 2 3 0 6-3 6-6 0-1 0-1 0-2 2-1 4-3 4-6 0-2-2-5-5-6 0-1 0-1 0-2 0-4-3-6-6-6-2-2-5-2-7-1z" />
+                <path d="M32 13v38" />
+                <path d="M23 23c3 1 5 3 5 6" />
+                <path d="M41 23c-3 1-5 3-5 6" />
+                <path d="M22 35c3 0 6 2 6 5" />
+                <path d="M42 35c-3 0-6 2-6 5" />
+              </svg>
+            </div>
+            <h3 class="team-card__name">Sofía Herrera</h3>
+            <p class="team-card__role">Guion</p>
+          </article>
+
+          <!-- Ojo → Ilustración -->
+          <article class="team-card">
+            <div class="team-card__art">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M6 32c7-11 16-16 26-16s19 5 26 16c-7 11-16 16-26 16S13 43 6 32z" />
+                <circle cx="32" cy="32" r="9" />
+                <circle cx="32" cy="32" r="3.4" fill="currentColor" stroke="none" />
+              </svg>
+            </div>
+            <h3 class="team-card__name">Lucía Méndez</h3>
+            <p class="team-card__role">Ilustración</p>
+          </article>
+
+          <!-- Oído → Diseño de sonido -->
+          <article class="team-card">
+            <div class="team-card__art">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 26c0-9 7-15 16-13 7 2 11 9 9 16-1 5-5 7-6 11-1 3-2 6-6 6-3 0-5-2-5-5" />
+                <path d="M27 27c1-5 6-7 10-5 4 2 5 6 3 10" />
+                <path d="M31 31c2-2 6 0 5 4" />
+              </svg>
+            </div>
+            <h3 class="team-card__name">Daniel Castro</h3>
+            <p class="team-card__role">Diseño de sonido</p>
+          </article>
+
+          <!-- Pulmones → Música original -->
+          <article class="team-card">
+            <div class="team-card__art">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M32 12v16" />
+                <path d="M32 21c-2 2-6 3-9 5" />
+                <path d="M32 21c2 2 6 3 9 5" />
+                <path d="M26 24c-6 3-10 10-10 19 0 5 1 9 5 9 4 0 6-3 6-8 0-7 0-14-1-20z" />
+                <path d="M38 24c6 3 10 10 10 19 0 5-1 9-5 9-4 0-6-3-6-8 0-7 0-14 1-20z" />
+              </svg>
+            </div>
+            <h3 class="team-card__name">Valentina Ortiz</h3>
+            <p class="team-card__role">Música original</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 CIERRE -->
+    <section class="band band--cierre reveal" id="cuerpo">
+      <h2 class="band__finale">Alma<br />nueva</h2>
+      <img class="cierre__art" src="assets/seccult.png"
+           alt="Ilustración de la figura de alma nueva con los brazos abiertos" />
+    </section>
+  </main>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="footer" id="contacto">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <span class="footer__brand">Alma nueva</span>
+        <span class="footer__copy">&copy; 2024 Alma Nueva</span>
+      </div>
+
+      <nav class="footer__nav">
+        <a href="#esencia">Tráiler</a>
+        <a href="#mente">El proyecto</a>
+        <a href="#historias">Historias</a>
+        <a href="#app">La App</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="footer__right">
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+            </svg>
+          </a>
+          <a href="#" aria-label="Vimeo">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M3 8c1-1.2 2-1.8 2.8-1.8 1.6 0 2 2 2.4 4 .5 2.4.8 4 1.6 4 .7 0 2-2 3-4.4C16.3 6 16 4 13.6 4 19 3 21 5 21 8.4c0 3-3.6 7.6-6.4 9.6-2 1.4-3.4 1-4.4-1.2-.7-1.6-1.4-4.2-2-6.2-.4-1.4-.8-1.8-1.3-1.6L3 8z" fill="currentColor" stroke="none" />
+            </svg>
+          </a>
+          <a href="mailto:hola@almanueva.com" aria-label="Correo">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="m3 7 9 6 9-6" />
+            </svg>
+          </a>
+        </div>
+        <img class="footer__sena" src="assets/logo-de-SENA.png" alt="Logo del SENA" />
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
